@@ -1,0 +1,80 @@
+import 'package:flutter/material.dart';
+
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  // Pembuatan Variabel Yang Akan Dipakai
+  TextEditingController inputUsername = TextEditingController();
+  TextEditingController inputPassword = TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Login"),
+        backgroundColor: Color.fromARGB(0, 50, 145, 145),
+      ),
+
+      // Color.fromARGB(opacity, red, green, blue)
+      backgroundColor: Color.fromARGB(245, 19, 222, 124),
+
+      body: Column(
+        children: [
+          Padding(padding: EdgeInsets.all(16)),
+
+          Center(
+            child: Container(
+              width: 300,
+              child: TextFormField(
+                decoration: InputDecoration(
+                  fillColor: Colors.orange,
+                  hintText: 'Masukan Username',
+                  filled: true,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(40)),
+                  ),
+                ),
+                controller: inputUsername,
+              ),
+            ),
+          ),
+
+          Padding(padding: EdgeInsets.all(16)),
+
+          Center(
+            child: Container(
+              width: 300,
+              child: TextFormField(
+                decoration: InputDecoration(
+                  fillColor: Colors.orange,
+                  hintText: 'Masukan Password',
+                  filled: true,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(40)),
+                  ),
+                ),
+                controller: inputPassword,
+                obscureText: true,
+              ),
+            ),
+          ),
+
+          Padding(padding: EdgeInsets.all(16)),
+
+          ElevatedButton(
+            child: Text("Login"),
+            onPressed: () {
+              print(inputUsername.text);
+              print(inputPassword.text);
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
