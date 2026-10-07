@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      // Halaman pertama = Login
+      // Halaman pertama adalah Login
       home: const LoginPage(),
     );
   }
