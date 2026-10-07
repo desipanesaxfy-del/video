@@ -49,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
         children: [
           // Logo
           Center(
-            child: Image.asset('asset/img/ui ux.png', width: 200, height: 200),
+            child: Image.asset('asset/logoV.jpg', width: 200, height: 200),
           ),
 
           const SizedBox(height: 16),
