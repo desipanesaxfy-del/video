@@ -8,7 +8,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  // Pembuatan Variabel Yang Akan Dipakai
   TextEditingController inputUsername = TextEditingController();
   TextEditingController inputPassword = TextEditingController();
 
@@ -20,7 +19,6 @@ class _LoginPageState extends State<LoginPage> {
         backgroundColor: Color.fromARGB(0, 50, 145, 145),
       ),
 
-      // Color.fromARGB(opacity, red, green, blue)
       backgroundColor: Color.fromARGB(245, 182, 106, 165),
 
       body: Column(
@@ -32,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
               width: 300,
               child: TextFormField(
                 decoration: InputDecoration(
-                  fillColor: Colors.orange,
+                  fillColor: Color.fromARGB(255, 255, 255, 255),
                   hintText: 'Masukan Username',
                   filled: true,
                   border: OutlineInputBorder(
@@ -51,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
               width: 300,
               child: TextFormField(
                 decoration: InputDecoration(
-                  fillColor: Colors.orange,
+                  fillColor: Color.fromARGB(255, 255, 255, 255),
                   hintText: 'Masukan Password',
                   filled: true,
                   border: OutlineInputBorder(
