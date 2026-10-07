@@ -15,34 +15,41 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("aplikasi video"),
-        backgroundColor: Color.fromARGB(0, 49, 168, 168),
+        title: Text("Nama App Kalian"),
+        backgroundColor: Color.fromARGB(0, 50, 145, 145),
       ),
       //Color.fromARGB( opacity, red, gren, blue)
-      backgroundColor: Color.fromARGB(255, 220, 156, 156),
+      backgroundColor: Color.fromARGB(245, 182, 106, 165),
       body: Column(
         children: [
           Center(
             child: Container(
               width: 300,
-              // height: 300,
-              color: Color.fromARGB(197, 220, 155, 155),
-              child: TextField(
-                // Dekorasi untuk Petunjuk Pengisian dan Garis
+              child: TextFormField(
+                // Dekorasi untuk TextFormField
                 decoration: InputDecoration(
+                  fillColor: const Color.fromARGB(255, 255, 177, 217),
                   hintText: 'Masukan Nama Kamu',
-                  border: OutlineInputBorder(),
+                  filled: true,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(40)),
+                  ),
                 ),
-                // controller untuk
+                // controller untuk ...
                 controller: inputNama,
-                // Ketika Dikirm nanti
-                onSubmitted: (values) {
-                  // isi 
+                // Ketika Dikirim nanti
+                onFieldSubmitted: (values) {
+                  // isi blablabla ...
                   inputNama.text = values;
                 },
               ),
             ),
           ),
+
+          //untuk kasih jarak antar widget
+          Padding(padding: EdgeInsets.all(16)),
+
+          // Tombol
           ElevatedButton(
             child: Text("Tampilkan Nama"),
             onPressed: () {
