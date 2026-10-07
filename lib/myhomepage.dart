@@ -11,5 +11,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(title: Text("video")) );
+    backgroundColor: Color.fromARGB(255,255, 255, 255);
   }
 }
+ 
+
