@@ -16,7 +16,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Nama App Kalian"),
-        backgroundColor: Color.fromARGB(0, 50, 145, 145),
+        backgroundColor: Color.fromARGB(0, 49, 168, 168),
       ),
       //Color.fromARGB( opacity, red, gren, blue)
       backgroundColor: Color.fromARGB(255, 255, 255, 255),
