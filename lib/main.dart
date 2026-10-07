@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/myhomepage.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
-
-  @override
-  State<MyWidget> createState() => _MyWidgetState();
+void main() {
+  runApp(const MyApp());
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
+      home: const MyHomePage(),
+    );
   }
 }

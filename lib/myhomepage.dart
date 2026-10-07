@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(appBar: AppBar(title: Text("video")) );
   }
 }
