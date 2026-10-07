@@ -26,6 +26,7 @@ class _LoginPageState extends State<LoginPage> {
           Padding(padding: EdgeInsets.all(16)),
 
           Center(
+
             child: Container(
               width: 300,
               child: TextFormField(
