@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
       ),
 
       // Color.fromARGB(opacity, red, green, blue)
-      backgroundColor: Color.fromARGB(245, 19, 222, 124),
+      backgroundColor: Color.fromARGB(245, 182, 106, 165),
 
       body: Column(
         children: [
