@@ -19,7 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Color.fromARGB(0, 49, 168, 168),
       ),
       //Color.fromARGB( opacity, red, gren, blue)
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: Color.fromARGB(255, 220, 156, 156),
       body: Column(
         children: [
           Center(
