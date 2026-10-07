@@ -15,7 +15,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Nama App Kalian"),
+        title: Text("aplikasi video"),
         backgroundColor: Color.fromARGB(0, 49, 168, 168),
       ),
       //Color.fromARGB( opacity, red, gren, blue)
